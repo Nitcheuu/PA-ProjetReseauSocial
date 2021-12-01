@@ -7,8 +7,8 @@ services:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: RS
   web:
-    image: httpd:2.4.51
+    image: webdevops/php-apache:latest
     restart: on-failure
     volumes:
-      - ./src/:/usr/
+      - ./src/:/app/
     restart: on-failure
